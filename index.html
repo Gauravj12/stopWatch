@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stop Watch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <h1>Stopwatch</h1>
+            <p class="time">00 : 00 : 00</p>
+            <div class="buttons">
+                <button id="start" onclick="this.disabled=true; calltimer()">Start</button>
+                <button onclick="laptimer()">Lap</button>
+                <button id="stop" onclick="stoptimer()">Stop</button>
+                <button id="clear" onclick="cleartimer()">Clear</button>
+            </div>
+            <p id="lap"></p>
+        </div>
+        <script src="/script/script.js" async defer></script>
+    </body>
+</html>
